@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <locale.h>
+
+void negativo(int numero){
+  if(numero > 0){
+    printf("O valor é positivo");
+  }else{
+    printf("O valor é negativo");
+  }
+}
+
+int main() {
+  setlocale(LC_ALL, "Portuguese_Brazil");
+  
+  int valor;
+  
+  printf("Digite o valor: ");
+  scanf("%d", &valor);
+  
+  negativo(valor);
+}
