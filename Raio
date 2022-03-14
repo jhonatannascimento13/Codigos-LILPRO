@@ -1,0 +1,20 @@
+#include <stdio.h> 
+#include <stdlib.h>
+
+void calculo(int raio) {
+  int volume;
+
+  volume = 4/3 * (raio * raio * raio);
+
+  printf("O volume é: %d", volume);
+}
+
+int main() {
+  int n1;
+
+  printf("Digite o valor do raio: ");
+  scanf("%d", &n1);
+
+  calculo (n1);
+
+}
